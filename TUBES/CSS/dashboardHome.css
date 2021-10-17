@@ -1,0 +1,231 @@
+#Navbar {
+    width: 250px;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 999;
+    position: fixed;
+    overflow: hidden;
+    transition: 300ms ease;
+}
+
+#Navbar.active {
+    width: 90px;
+    transition: 300ms ease;
+}
+
+#Navbar #logo{
+    width: 100%;
+    padding-top: 1em;
+    transition: 300ms ease;
+}
+
+#Navbar #logo span img{
+    margin-top: -10px;
+    transition: 300ms ease;
+}
+
+#Navbar #logo.active span img{
+    width: 100%;
+    transition: 300ms ease;
+}
+
+#Navbar #logo span:nth-child(2){
+    font-weight: 700;
+    font-size: 25px;
+    margin-left: -15px;
+    color: #2f3b4b;
+    transition: 300ms ease;
+
+}
+
+#Navbar #logo span:nth-child(2).active{
+    display: none;
+}
+
+#Navbar #content{
+    width: 100%;
+}
+
+#Navbar #content ul{
+    list-style: none;
+    padding: 10%;
+    height: 100vh;
+}
+
+#Navbar #content ul li:nth-child(1){ 
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    background-color: rgba(56, 148, 255, 0.1);
+    border-radius: 10px;
+}
+
+#Navbar #content ul li{ 
+    width: 100%;
+    height: 50px;
+    color: #647387;
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 1em;
+    transition: 500ms ease;
+
+    cursor: pointer;
+}
+
+#Navbar #content ul li svg{ 
+    
+}
+
+#Navbar #content.active ul li { 
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+
+}
+
+#Navbar #content ul li:hover{ 
+    background-color: rgba(56, 148, 255, 0.1);
+    color: #3894FF;
+    border-radius: 10px;
+    transition: 500ms ease;
+}
+
+#Navbar #content ul li:nth-child(1) h5{
+    font-weight: 600;
+    color: #3894FF;
+    font-size: 15px;
+    width: 100%;
+    padding-top: 0.6em;
+    padding-left: 20px;
+} 
+
+#Navbar #content ul li h5{
+    font-weight: 600;
+    color: #647387;
+    font-size: 15px;
+    width: 100%;
+    padding-top: 0.6em;
+    padding-left: 20px;
+    transition: 500ms ease;
+}
+
+#Navbar #content.active ul li h5{
+    display: none;
+}
+
+
+#Navbar #content ul li:hover h5 {
+    color: #3894FF;
+    transition: 300ms ease;
+
+}
+
+#Navbar #content ul li .shop{
+    transition: 300ms ease;
+}
+
+#Navbar #content ul li:hover .shop{
+    stroke: #3894FF;
+    transition: 300ms ease;
+}
+
+#Navbar #content ul li .kotak{
+    transition: 300ms ease;
+}
+
+#Navbar #content ul li:hover .kotak{
+    fill: #3894FF;
+    transition: 300ms ease;
+}
+
+#Navbar #content ul li .stats{
+    transition: 300ms ease;
+}
+
+#Navbar #content ul li:hover .stats{
+    fill: #3894FF;
+    transition: 300ms ease;
+}
+
+#Navbar #content ul li:hover .icon-menu-1{
+    background-color: #3894FF;
+    transition: 300ms ease;
+}
+
+#Navbar #content ul li:hover .icon-menu-2{
+    background-color: #3894FF;
+    transition: 300ms ease;
+}
+
+#Navbar #content ul li .profile{
+    transition: 300ms ease;
+}
+
+#Navbar #content ul li:hover .profile{
+    stroke: #3894FF;
+    transition: 300ms ease;
+}
+
+#Navbar #content ul li .icon-menu{
+    display:inline-block;
+    cursor: pointer;
+    padding-top: 0.2em;
+}
+
+#Navbar #content ul #btn-collapse{
+    position: absolute;
+    width: 79%;
+    bottom: 10px;
+}
+
+#Navbar #content ul #btn-collapse.active{
+    width: 75px;
+}
+
+#Navbar #content ul li .icon-menu-1{
+    width: 25px;
+    height: 4px;
+    background-color: #647387;
+    margin-bottom: -4px;
+    border-radius: 100px;
+    transform: rotate(40deg);
+    transition: 300ms ease;
+}
+
+#Navbar #content ul li .icon-menu-2{
+    width: 25px;
+    height: 4px;
+    background-color: #647387;
+    margin-bottom: 0px;
+    border-radius: 100px;
+    transition: 300ms ease;
+    transform: rotate(-40deg);
+
+}
+
+#Navbar #content.active ul li .icon-menu-1{
+    transition: 300ms ease;
+    transform: rotate(0);
+    margin-bottom: 7px;
+}
+
+#Navbar #content.active ul li .icon-menu-2{
+    transition: 300ms ease;
+    transform: rotate(0);
+    margin-bottom: 7px;
+
+}
+
+#home {
+    background-color: #F9F9F9;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding-left: 20em;
+}
+
