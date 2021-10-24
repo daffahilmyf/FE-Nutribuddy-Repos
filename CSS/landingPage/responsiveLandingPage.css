@@ -1,0 +1,37 @@
+@media screen and (max-width : 768px){
+
+    nav{
+        max-width: 100%;
+        justify-content: space-between;
+    }
+    .section-1{
+        max-width: 100%;
+    }
+    .section-1 .content {
+        max-width: 100%;
+    }
+    .section-1 .content .deskripsiContent{
+        padding: 10px;
+        margin: 10px;
+    }
+    .section-1 .content .imageContent img{
+        width: 10px;
+    }
+}
+
+@media screen and (max-width : 576px){
+    nav {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 0;
+    }
+    nav .menu ul{
+        display: none;
+    }
+    nav .pilihanButton ul{
+        display: none;
+    }
+}
+

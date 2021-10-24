@@ -1,0 +1,599 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigasi Menu Start */
+nav{
+    background-color: #108CFF;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+nav .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .logo h6{
+    font-weight: bold;
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+nav .menu ul {
+    list-style: none;
+}
+
+nav .menu li{
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    width: 90px;
+    height: 40px;
+}
+
+nav .menu li a{
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav .pilihanButton ul{
+    display: flex;
+}
+
+nav .pilihanButton ul li{
+    display: flex;
+    text-transform: capitalize;
+    background-color: white; 
+    margin-left: 20px;
+    margin-right: auto;
+    width: 90px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    color: #108CFF;
+    font-weight: 700;   
+}
+/* Navigasi Menu End */
+
+
+/* Hamburger Menu Start */
+/* .menu-toggle{
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-around;
+}
+
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+}     */
+/* Hamburger Menu End */
+
+
+/* Section-1 Start */
+.section-1{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #108CFF;
+    display: flex;
+    box-sizing: border-box;
+    min-height: 97vh;
+}
+
+.container-section-1{
+    width: 1300px;
+    margin: 0 130px 0 ;
+
+}
+.section-1 .home{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    /* margin: 30px 30px 0 30px;   */
+}
+
+.section-1 .home .imageContent{
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.section-1 .home .imageContent img{
+    width: 560px;
+    height: 560px;
+    align-items: center;
+
+}
+.section-1 .home .deskripsiContent{
+    margin: 120px 38px 0px 38px;
+
+    
+
+}
+.section-1 .home .deskripsiContent h2{
+    color: white;
+    text-transform: capitalize;
+    font-size: 38px;
+}
+
+
+.section-1 .home .deskripsiContent .penjelasan{
+    color: white;
+    margin-top: 0px;
+    
+}
+
+.section-1 .home .deskripsiContent h6{
+    color: white;
+    margin-top: 30px;
+    text-transform: capitalize; 
+    font-weight: 700;
+}
+.section-1 .home .deskripsiContent h6 span{
+    font-weight: 100;
+}
+
+.section-1 .home .deskripsiContent .teamName{
+    font-weight: 200;
+    margin-top: 30px;
+    font-size: 18px;
+    align-content: flex-end;
+}
+
+.section-1 .graphic-1{
+    position: absolute;
+    right: 0;
+    bottom: -85px;
+}
+.section-1 .graphic-1 img{
+    width: 120px;
+    
+}
+
+.section-1 .graphic-2{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.section-1 .graphic-2 img{
+    width: 100px;
+    
+}
+.section-1 .graphic-3{
+    position: absolute;
+    right: 0;
+    top: 20%;
+    transform: scale(-1);
+}
+.section-1 .graphic-3 img{
+    width: 100px;
+    
+}
+/* Section-1 End */
+
+/* Section-2 Start */
+.section-2{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    
+}
+
+.container-section-2{
+    width: 1300px;
+    margin: 0 130px 0 ;
+}
+
+.section-2 .graphic-1{
+    position: absolute;
+    left: 0;
+    bottom: -250px;
+}
+.section-2 .graphic-1 img{
+    width: 150px;
+    
+}
+.section-2 .graphic-2{
+    position: absolute;
+    right: 0;
+    bottom: -1400px;
+    transform: scale(-1);
+}
+.section-2 .graphic-2 img{
+    width: 150px;
+    
+}
+
+.section-2 .about{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 50px;
+}
+.about-content .image-content{
+    margin-right: 30px;
+}
+
+.about-content .image-content img{
+    width: 500px;
+    height: 560px;
+}
+
+.about .section-title{
+   margin-top: 50px;
+   margin-left: 20px;
+    
+}
+.about .section-title h2{
+    text-transform: capitalize;
+}
+
+.about .section-title h6{
+    /* text-transform: capitalize; */
+    color:#4AB7FF;
+
+}
+.about .section-title .penjelasan{
+    margin-top: 20px;
+}
+
+.about .section-title .button-daftar{
+    background-color:#4AB7FF;
+    color: white;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 20px;
+    cursor: pointer;
+    bottom: 15px;
+    right: 10px;
+    padding: 9px 20px;
+    font-size: 16px;
+    line-height: 1;
+    border-radius: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+.container-features {
+    width: 1300px;
+    margin: 0 130px 0 ;
+
+
+    }
+.features h4{
+    color: #4AB7FF;
+        
+    }
+.features .garis{
+    width: 1299px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.1px solid #4AB7FF;
+    opacity: 0.4;
+    margin-top: 10px;
+    }
+
+.features-content{
+    display: flex;
+    flex: 0 0 100%;
+    max-width: 100%;
+    }
+.features-content .content-inner{
+    margin: 10px;
+}
+.features-content .content-inner:nth-child(1){
+    margin-left: 0;
+}
+.features-content .content-inner:nth-child(3){
+    margin-right: 0;
+}
+
+.features-content .content-inner img{
+    width: 100px;
+}
+.features-content .content-inner h5{
+    color: #4AB7FF;
+    margin: 10px 0 10px 0;
+    text-transform: capitalize;
+}
+
+.features-content .content-inner p{
+    line-height: 25px;
+    text-transform: capitalize;
+}
+
+.benefit-features{
+    margin-top: 20px;
+}
+.benefit-content-inner{
+    display: flex;
+}
+
+.benefit-content-inner h4{
+    color: #4AB7FF;
+    text-transform: capitalize;
+}
+.benefit-content-inner .benefit-title{
+    display: flex;
+    align-items: center;
+}
+.benefit-content-inner .garis{
+    border: 0.1px solid #4AB7FF;
+    width: 270px;
+    height: 0;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+.benefit-content-inner .penjelasan{
+    text-transform: capitalize;
+    width: 100%;
+    margin-left: 45px;
+    border: 1px solid transparent;
+    
+}
+
+.faq-section{
+    margin-top: 15%;
+
+}
+
+.faq-section .section-title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.faq-section .section-title h6{
+    text-transform: uppercase;
+    color: #4AB7FF;
+}
+
+.faq-section .section-title h2{
+    text-transform: capitalize;
+}
+.faq-question-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.faq-question{
+    background-color: white;
+    border-radius: 9px;
+    margin-bottom: 10px;
+    padding: 1rem;
+    box-shadow: 9px -2px 36px -13px rgba(16,140,255,0.73);
+    -webkit-box-shadow: 9px -2px 36px -13px rgba(16,140,255,0.73);
+    -moz-box-shadow: 9px -2px 36px -13px rgba(16,140,255,0.73);
+    width: 40%;
+    margin-right: 10px;
+}
+
+.faq-question .faq-link{
+    text-decoration: none;
+    color: #4AB7FF;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.faq-link svg{
+    color: #000000;
+    padding: .5rem;
+    
+}
+
+.faq-link .bi-bi-dash{
+    display: none;
+}
+
+.faq-question .answer{
+    max-height: 0;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(236, 236, 236);
+    transition: height 650ms;
+    border-radius: 10px;
+    
+}
+
+.faq-question .answer::before{
+    content: " ";
+    position: absolute;
+    width: .1rem;
+    height: 50%;
+    background-color: #FFCE11;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    
+}
+.faq-question .answer p{
+    color: black;
+    padding: 2rem;
+}
+
+.faq-question:target .answer{
+    max-height: 100%;
+
+}
+.faq-question:target .faq-link .bi-bi-plus-lg{
+    display: none;
+}
+.faq-question:target .faq-link .bi-bi-dash{
+    display: block;
+}
+
+.contact-section{
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #4AB7FF;
+    height: 260px;
+    border-radius: 10px;
+}
+.contact-section .image-content {
+    width: 30%;
+    height: 20px;
+    position: relative;
+    top: 20px;
+}
+.contact-section .image-content img{
+    width: 300px;
+    position: absolute;
+    top: -100px;
+    left: 50px;
+
+}
+
+.contact-section .message-text{
+    margin-top: 20px;
+
+    width: 30%;
+    pad: 20px;
+}
+.contact-section .message-text h4{
+
+    width: 100%;
+    text-transform: capitalize;
+    color: white;
+    margin-bottom: 20px;
+}
+.contact-section .message-text p{
+    color: white;
+    width: 100%;
+
+}
+
+.contact-section .submit-message{
+    border-top: 20%;
+
+}
+.contact-section .submit-message .input-submit{
+    width: 100%;
+    height: 20%;
+    border: 1px solid white;
+    border-radius: 30px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.contact-section .submit-message .input-submit .input-control{
+    height: 100%;
+    border-radius: 20px;
+}
+.contact-section .submit-message .input-submit .input-control::placeholder{
+    color: white;
+    font-family: montserrat;
+    text-transform: capitalize;
+}
+
+.contact-section .submit-message .input-submit .input-control{
+    width: 100%;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 30px;
+    
+}
+.contact-section .submit-message .input-submit-2{
+    display: flex;
+    height: 75px;
+    margin-top: 20px;
+    padding-top: 20px;
+
+}
+.submit-message .input-submit-2 .input-submit-lagi{
+    height: 50%;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.submit-message .input-submit-2 .input-submit-lagi-2{
+    height: 50%;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.submit-message .input-submit-2 .input-submit-lagi .input-control-2{
+    height: 100%;
+    border: none;
+    border-radius: 20px;
+    background-color: transparent;
+}
+.submit-message .input-submit-2 .input-submit-lagi .input-control-2::placeholder{
+    color: white;
+    font-family: montserrat;
+    text-transform: capitalize;
+}
+.submit-message .input-submit-2 .input-submit-lagi-2 .input-control-2{
+    height: 100%;
+    border: none;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.submit-message .input-submit-2 .input-submit-lagi-2 .input-control-2::placeholder{
+    color: white;
+    font-family: montserrat;
+    text-transform: capitalize;
+}
+
+.contact-section .submit-message .button-submit{
+    width: 100%;
+    background-color: #FFCE11;
+    height: 20%;
+    border-radius: 20px;
+}
+.contact-section .submit-message .button-submit .button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.contact-section .submit-message .button-submit .button h6{
+    color: white;
+}
+/* Section-2 End */
+
