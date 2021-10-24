@@ -1,0 +1,54 @@
+body {
+    overflow: hidden;
+    font-family: "Montserrat";
+}
+
+h1 {
+    font-family: "Montserrat";
+    font-size: 70px;
+    font-weight: 700;
+    color: #4a4a4a;
+}
+
+h2 {
+    font-family: "Montserrat";
+    font-size: 50px;
+    font-weight: 700;
+    color: #4a4a4a;
+}
+
+h3 {
+    font-family: "Montserrat";
+    font-size: 40px;
+    font-weight: 600;
+    color: #4a4a4a;
+}
+
+h4 {
+    font-family: "Montserrat";
+    font-size: 30px;
+    font-weight: 600;
+    color: #4a4a4a;
+}
+
+h5 {
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 600;
+    color: #4a4a4a;
+}
+
+h6 {
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 400;
+    color: #4a4a4a;
+}
+
+p {
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 2.5em;
+    font-weight: 400;
+    color: #4a4a4a;
+}
