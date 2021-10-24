@@ -1,0 +1,146 @@
+.login .row .col-sm-6:nth-child(2){
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 2em;
+    padding-bottom: 3em;
+    position: relative;
+    left: 50%;
+}
+
+.login {
+    overflow: hidden;
+}
+
+.login .row .Form h5 {
+    padding-top: 1em;    
+    color: #647387;
+    padding-left: 1.4em;
+}
+
+.login .row .Form a {
+    text-decoration: none;
+}
+
+
+.login .row .Form p {
+    padding-left: 2em;
+}
+
+.login .row .Form .form-login {
+    padding-left: 1.6em;
+    padding-top: 1em;
+}
+
+.login .row .Form .form-login label{
+    padding-bottom: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #647387;
+}
+
+.login .row .Form .form-login input{
+    margin-bottom: 20px;
+    border-radius: 100px;
+    height: 50px;
+    border: 1.5px solid rgb(138, 138, 138);
+}
+
+.login .row .Form .form-login input::placeholder{
+    font-size: 14px;
+    text-indent: 10px;
+    opacity: 0.5;
+}
+
+.login .row .Form .form-login .form-nama{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content:flex-start;
+}
+
+.login .row .Form .form-login .form-nama li{
+    width: 50%;
+}
+
+.login .row .Form .form-login .form-nama li:nth-child(1){
+    margin-right: 10px;
+}
+
+.login .row .Form .form-login .form-nama li:nth-child(2){
+    margin-left: 10px;
+}
+
+.login .row .Form .form-login .form-nama li input{
+    width: 100%;
+    height: 50px;
+    border: 1.5px solid rgb(138, 138, 138);
+    border-radius: 100px;
+}
+
+.login .row .Form .form-login ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.login .row .Form .form-login ul li input{
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+}
+
+.login .row .Form .form-login ul li label{
+    margin-top: 4px;
+    margin-left: 5px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.login .row .Form .form-login ul li .form-text{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.login .row .Form .form-login .btn-login{
+    width: 100%;
+    height: 50px;
+    border-radius: 200px;
+    background-color: #3894FF;
+    border: none;
+    margin-top: 2em;
+    font-weight: 700;
+    color: white;
+}
+
+.login .row .Form .form-login .btn-register{
+    width: 100%;
+    height: 50px;
+    border-radius: 200px;
+    background-color:white;
+    border: 1px solid rgb(138, 138, 138);
+    margin-top: 0.5em;
+    font-weight: 600;
+    color: #647387;
+}
+
+
+
+
+.login .row .video {
+    background-color: #0091ff;
+    height: 100vh;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+}
+
+.login .row .video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+}
+
