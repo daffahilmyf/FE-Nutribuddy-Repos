@@ -1,5 +1,4 @@
 body {
-   /* overflow: hidden;*/
     font-family: "Montserrat";
 }
 
@@ -51,4 +50,23 @@ p {
     line-height: 2.5em;
     font-weight: 400;
     color: #4a4a4a;
+}
+
+#logo{
+    width: 100%;
+    padding-top: 1em;
+    transition: 300ms ease;
+}
+#logo span img{
+    margin-top: -10px;
+    transition: 300ms ease;
+}
+
+#logo span:nth-child(2){
+    font-weight: 700;
+    font-size: 25px;
+    margin-left: -15px;
+    color: #2f3b4b;
+    transition: 300ms ease;
+
 }
