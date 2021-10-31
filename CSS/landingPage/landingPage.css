@@ -1,6 +1,14 @@
+
 *{
     margin: 0;
     padding: 0;
+}
+p{ 
+    text-justify: inter-word;
+    text-align: justify;
+}
+.container-all{
+    max-width: 100%;
 }
 *::before,
 ::after{
@@ -11,7 +19,9 @@
 body{
     margin: 0;
     padding: 0;
+    box-sizing: border-box  ;
 }
+
 
 /* Navigasi Menu Start */
 nav{
@@ -20,17 +30,33 @@ nav{
     display: flex;
     justify-content: space-around;
     padding: 20px 0;
+    align-items: center;
+
 }
 
 nav .logo{
     display: flex;
-    justify-content: center;
     align-items: center;
+  
 }
+nav .logo .logo-brand{
+
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    margin-right: -10px;
+}
+nav .logo img{
+    width: 70px;
+    height: 70px;
+    
+}
+
 
 nav .logo h6{
     font-weight: bold;
     color: white;
+  
 }
 
 nav ul{
@@ -61,6 +87,10 @@ nav .menu li a{
 
 nav .pilihanButton ul{
     display: flex;
+}
+nav .pilihanButton ul a{
+    text-decoration: none;
+    color: #4AB7FF;
 }
 
 nav .pilihanButton ul li{
@@ -106,7 +136,7 @@ nav .pilihanButton ul li{
     background-color: #108CFF;
     display: flex;
     box-sizing: border-box;
-    min-height: 97vh;
+    min-height: 100vh;
 }
 
 .container-section-1{
@@ -128,13 +158,11 @@ nav .pilihanButton ul li{
 }
 
 .section-1 .home .imageContent img{
-    width: 560px;
+    width: 600px;
     height: 560px;
-    align-items: center;
-
 }
 .section-1 .home .deskripsiContent{
-    margin: 120px 38px 0px 38px;
+    margin: 120px 0px 0px 38px;
 
     
 
@@ -172,7 +200,7 @@ nav .pilihanButton ul li{
 .section-1 .graphic-1{
     position: absolute;
     right: 0;
-    bottom: -85px;
+    bottom: -140px;
 }
 .section-1 .graphic-1 img{
     width: 120px;
@@ -206,18 +234,20 @@ nav .pilihanButton ul li{
     margin: 0;
     width: 100%;
     min-height: 100vh;
+    position: relative;
     
 }
 
 .container-section-2{
-    width: 1300px;
-    margin: 0 130px 0 ;
+    width: 1259px;
+    margin: 10% 130px 0 ;
+
 }
 
 .section-2 .graphic-1{
     position: absolute;
-    left: 0;
-    bottom: -250px;
+    right: 0;
+    bottom: 0;
 }
 .section-2 .graphic-1 img{
     width: 150px;
@@ -225,9 +255,8 @@ nav .pilihanButton ul li{
 }
 .section-2 .graphic-2{
     position: absolute;
-    right: 0;
-    bottom: -1400px;
-    transform: scale(-1);
+    left: 0;
+    top: -240px;
 }
 .section-2 .graphic-2 img{
     width: 150px;
@@ -238,7 +267,8 @@ nav .pilihanButton ul li{
     display: flex;
     justify-content: center;
     box-sizing: border-box;
-    margin: 50px;
+    position: relative;
+    
 }
 .about-content .image-content{
     margin-right: 30px;
@@ -251,22 +281,32 @@ nav .pilihanButton ul li{
 
 .about .section-title{
    margin-top: 50px;
-   margin-left: 20px;
+   margin-left: 100px;
     
 }
+
+.about .section-title p{ 
+    width: 100%;   
+ }
 .about .section-title h2{
     text-transform: capitalize;
 }
 
 .about .section-title h6{
-    /* text-transform: capitalize; */
     color:#4AB7FF;
 
+}
+.section-title .graphic-title {
+    position: absolute;
+    bottom: 0;
+    right: -50px;
 }
 .about .section-title .penjelasan{
     margin-top: 20px;
 }
-
+.section-title .graphic-title img{
+    width: 750px;
+}
 .about .section-title .button-daftar{
     background-color:#4AB7FF;
     color: white;
@@ -283,18 +323,35 @@ nav .pilihanButton ul li{
     display: inline-block;
     text-decoration: none;
 }
+/* section-2 end */
+
+/* section-3 start */
+.section-3{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
 .container-features {
-    width: 1300px;
-    margin: 0 130px 0 ;
+    width: 1259px;
+    margin: 0 130px 0;
 
+}
+.section-3 .grapich-section-3{
+    bottom: 0;
 
-    }
+}
+.section-3 .grapich-section-3 img{
+    width: 200px;
+
+}
 .features h4{
     color: #4AB7FF;
         
     }
 .features .garis{
-    width: 1299px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -307,9 +364,27 @@ nav .pilihanButton ul li{
     display: flex;
     flex: 0 0 100%;
     max-width: 100%;
+    align-items: center;
+    margin-top: 10%;
+    
     }
 .features-content .content-inner{
-    margin: 10px;
+    margin: 50px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    box-shadow: 4px 11px 17px -6px rgba(74,183,255,0.69);
+    -webkit-box-shadow: 4px 11px 17px -6px rgba(74,183,255,0.69);
+    -moz-box-shadow: 4px 11px 17px -6px rgba(74,183,255,0.69);
+    height: 20em;
+}
+.content-inner .garis-content{
+    border: 0.1px solid rgb(201, 201, 201);
+    height: -1px;
+    opacity: 0.5;
+    width: 100%;
 }
 .features-content .content-inner:nth-child(1){
     margin-left: 0;
@@ -317,19 +392,38 @@ nav .pilihanButton ul li{
 .features-content .content-inner:nth-child(3){
     margin-right: 0;
 }
+.features-content .content-inner .icon{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 
 .features-content .content-inner img{
     width: 100px;
+    margin-left: auto;
+    margin : 10px 20px 0 20px;
+ 
 }
 .features-content .content-inner h5{
     color: #4AB7FF;
-    margin: 10px 0 10px 0;
+    margin-left: 10px;
+    margin-bottom: 10px;
     text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .features-content .content-inner p{
     line-height: 25px;
     text-transform: capitalize;
+    margin: 10px 10px 10px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .benefit-features{
@@ -361,14 +455,26 @@ nav .pilihanButton ul li{
 .benefit-content-inner .penjelasan{
     text-transform: capitalize;
     width: 100%;
-    margin-left: 45px;
+    margin-left: 30px;
     border: 1px solid transparent;
     
 }
 
-.faq-section{
-    margin-top: 15%;
+/* section-3 end */
 
+/* section-4 start */
+.section-4{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    min-height: 90vh;
+
+}
+
+.container-faq{
+    width: 1259px;
+    margin: 0 130px 0 ;
+    
 }
 
 .faq-section .section-title{
@@ -462,7 +568,9 @@ nav .pilihanButton ul li{
 .faq-question:target .faq-link .bi-bi-dash{
     display: block;
 }
+/* section t end */
 
+/* section 5 start */
 .contact-section{
     width: 100%;
     margin-top: 10%;
@@ -471,6 +579,11 @@ nav .pilihanButton ul li{
     background-color: #4AB7FF;
     height: 260px;
     border-radius: 10px;
+}
+
+.container-contact{
+    width: 1259px;
+    margin: 0 130px 0;
 }
 .contact-section .image-content {
     width: 30%;
@@ -488,9 +601,7 @@ nav .pilihanButton ul li{
 
 .contact-section .message-text{
     margin-top: 20px;
-
     width: 30%;
-    pad: 20px;
 }
 .contact-section .message-text h4{
 
@@ -502,11 +613,15 @@ nav .pilihanButton ul li{
 .contact-section .message-text p{
     color: white;
     width: 100%;
+    line-height: 32px;
 
 }
 
 .contact-section .submit-message{
     border-top: 20%;
+    position: relative;
+    margin-right: 40px;
+
 
 }
 .contact-section .submit-message .input-submit{
@@ -515,12 +630,13 @@ nav .pilihanButton ul li{
     border: 1px solid white;
     border-radius: 30px;
     margin-top: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .contact-section .submit-message .input-submit .input-control{
     height: 100%;
     border-radius: 20px;
+    
 }
 .contact-section .submit-message .input-submit .input-control::placeholder{
     color: white;
@@ -538,19 +654,22 @@ nav .pilihanButton ul li{
 }
 .contact-section .submit-message .input-submit-2{
     display: flex;
-    height: 75px;
-    margin-top: 20px;
-    padding-top: 20px;
+    justify-content: center;
+    align-content: center;
+    height: 70px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+
 
 }
 .submit-message .input-submit-2 .input-submit-lagi{
-    height: 50%;
+    height: 80%;
     border: 1px solid white;
     border-radius: 20px;
     margin-right: 10px;
 }
 .submit-message .input-submit-2 .input-submit-lagi-2{
-    height: 50%;
+    height: 80%;
     border: 1px solid white;
     border-radius: 20px;
     margin-left: 10px;
@@ -611,21 +730,28 @@ nav .pilihanButton ul li{
     display: flex;
     justify-content: space-around;
     padding: 20px;
+    width: 1220px;
+    margin: 0 130px 0;
+
+    
 }
 
 .footer-outer .footer-inner h5,
 .footer-outer .footer-inner p{
     color: white;
     text-transform: capitalize;
+    text-align: left;
 
 }
 
 .footer-outer .footer-inner p span{
     font-weight: 600;
+    font-size: 13px;
 }
 .footer-inner .image-content{
-
-    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -634,7 +760,6 @@ nav .pilihanButton ul li{
 }
 
 .footer-inner .jelajah{
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -653,10 +778,8 @@ nav .pilihanButton ul li{
 
 
 .footer-inner .hubungi {
-    
+ 
     width: 20%;
-    
-
 }
 .footer-inner .hubungi span{
     word-wrap: break-word;
@@ -668,11 +791,20 @@ nav .pilihanButton ul li{
 .footer-inner .social-media .social-media-inner .insta{
     display: flex;
     align-items: center;
-}
+    
 
+}
+/* .footer-inner .social-media .social-media-inner .medium p,
+.footer-inner .social-media .social-media-inner .linkedin p,
+.footer-inner .social-media .social-media-inner .insta p{
+    margin: 0;
+    padding: 0;    
+} */
 .footer-inner .social-media .social-media-inner img{
     width: 20px;
     height: 20px; 
     margin-right: 10px;
     margin-left: 2px;
+    display: flex;
+
 }

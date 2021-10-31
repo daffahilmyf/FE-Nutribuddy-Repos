@@ -4,38 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <!-- CSS EKSTERNAL LINK -->
     <link rel="stylesheet" href="CSS/landingPage/landingPage.css">
     <link rel="stylesheet" href="CSS/landingPage/responsiveLandingPage.css">
     <link rel="stylesheet" href="CSS/general.css">
     <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <!-- FONT -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <title>landing Page</title>
+    
 </head>
 <body>
-        
+    <div class="container-all">
         <nav>
             <div class="logo">
+                <div class="logo-brand">
+                    <img src="IMG/Landing Page/nutribuddylogo.webp" alt="">
+                
+                </div>
                 <h6>Nutribuddy.</h6>
             </div>
             <div class="menu">
                 <ul>
-                    <li> <a href="#"> beranda </a>  </li>
-                    <li> <a href="#"> tentang </a>  </li>
-                    <li> <a href="#"> kalkulator </a>  </li>
-                    <li> <a href="#"> kontak </a>  </li>
+                    <li> <a href="#section-1"> beranda </a>  </li>
+                    <li> <a href="#section-2"> tentang </a>  </li>
+                    <li> <a href="#section-3"> feature </a>  </li>
+                    <li> <a href="#section-5"> kontak </a>  </li>
                 </ul>
             </div>
             <div class="pilihanButton">
                 <ul>
-                    <li><a href=""></a> daftar </li>
-                    <li><a href=""></a> login </li>
+                    <li> <a href="registerDashboard.html">  daftar </li> </a>
+                    <li><a href="loginDashboard.html"> login </li> </a> 
                 </ul>
             </div>
 
-             <!-- Hamburger Menu Start -->
+        <!-- Hamburger Menu Start -->
             <!-- <div class="menu-toggle">
                 <span></span>
                 <span></span>
@@ -43,15 +51,16 @@
             </div> -->
         <!-- Hamburger Menu End-->
         </nav>
-       
-
         <!-- Navigasi end -->
      <!-- Section-1 start -->
-    <section class="section-1">
+    <div class="container">
+        
+    </div>
+    <section class="section-1 " id="section-1">
         <div class="container-section-1">
-            <div class="home">
-                <div class="imageContent">
-                    <img src="IMG/Landing Page/Dokter.webp" alt="Graphic Doctor">
+            <div class="home ">
+                <div class="imageContent ">
+                    <img src="IMG/Landing Page/dokter.png" alt="Graphic Doctor">
                 </div>
                 <div class="deskripsiContent">
                     <h2>
@@ -61,7 +70,6 @@
     
                     <h6> “simplicity is the soul of efficiency.”
                        <span> <br>- Austin Freeman - </br> </span> </h6>
-                    
                     <h6 class="teamName"> untitled nankatsu team
                 </div>
             </div>
@@ -74,18 +82,16 @@
         </div>
         
     <!-- Section 1 End -->
-
-    <!-- Section 2 Start -->
-    <section class="section-2">
+    <!-- Section 2 Start Tentang-->
+    <section class="section-2" id="section-2">
         <div class="container-section-2">
-            <div class="graphic-asset-2">
+            <div class="graphic-asset-2 ">
                 <div class="graphic-1"> <img src="IMG/Landing Page/circle.webp" alt=""></div>
                 <div class="graphic-2"> <img src="IMG/Landing Page/circle.webp" alt=""></div>
-
             </div>
             <div class="about">
-                <div class="about-content">
-                    <div class="image-content">
+                <div class="about-content ">
+                    <div class="image-content animate__bounceIn">
                        <img src="IMG/Landing Page/Component-1.webp" alt="Graphic Phone">
                     </div>
                 </div>
@@ -94,40 +100,59 @@
                     <h2> apa itu Nutribuddy? </h2>
                     <p class="penjelasan"> Aplikasi Nutribuddy merupakan aplikasi berbasis mobile yang ditujukan untuk mempermudah pengguna dalam menyelesaikan masalah terkait pola hidup sehat. Aplikasi ini akan menampilkan informasi spesifik mengenai kesehatan, makanan, aktivitas yang perlu dilakukan oleh pengguna untuk tetap sehat.  </p>
                     <a href="#" class="button-daftar">daftar</a>
+                    <div class="graphic-title">
+                        <img src="IMG/Landing Page/land.png" alt="">
+                    </div>
                 </div> 
             </div>
             </div>
+    </section>
+    <!-- section 2 End tentang -->
+    <!-- section 3 Start Features -->
+    <section class="section-3" id="section-3"> 
         <div class="container-features">
-            <div class="features">
+            <div class="features ">
                 <h4>Features</h4>
                 <div class="garis"> </div>
             </div>
-        <div class="features-content">
+        <div class="features-content fade-in">
             <div class="content-inner">
                 <div class="icon icon-1"> <img src="IMG/icon valid information.svg"> </div>
                  <h5> valid information </h5>
+                 <div class="garis-content"> </div>
                 <p>menyampaikan informasi kesehatan dengan melewati berbagai proses dalam mendapatkan data yang valid dan disetujui oleh ahli pada bidangnya.</p>     
             </div>
             <div class="content-inner">
                 <div class="icon icon-1"> <img src="IMG/icon health suggestion.svg"> </div>
                     <h5> health suggestion </h5>
+                    <div class="garis-content"> </div>
                     <p>memberikan rekomendasi seperti aktivitas, suplemen dan makanan yang dapat menjaga kesehatan pengguna agar tetap sehat.</p>     
                 </div>
             <div class="content-inner">
                  <div class="icon icon-1"> <img src="IMG/icon live tracking.svg"> </div>
                     <h5> live tracking </h5>
+                    <div class="garis-content"> </div>
                     <p>melakukan pengawasan status kesehatan pengguna secara langsung, pengguna dapat melakukan evaluasi pada setiap prosedur yang diikutinya. </p>     
             </div>
             </div>
-                <div class="benefit-features">
+                <!-- <div class="benefit-features">
                     <div class="benefit-content-inner">
                     <div class="benefit-title">
                         <h4>benefits</h4>
                          <div class="garis"> </div>
-                    </div>
+                        </div>
                         <p class="penjelasan">dengan adanya aplikasi ini diharapkan pengguna dapat memperhatikan pola hidup, serta dapat memenuhi kebutuhan mikronutrien yang dibutuhkan tubuh agar dapat melakukan kegiatan sehari hari dengan sehat dan kuat.</p>
                     </div>
-                    </div>
+                    </div> -->
+            </div>
+            <div class="grapich-section-3">
+                <img src="/IMG/Landing Page/circle.webp" alt="">
+            </div>
+    </section>
+        <!-- section 3 End Features  -->
+        <!-- section 4 Start FAQ -->
+            <section class="section-4" id="section-4">
+                <div class="container-faq">
                     <div class="faq-section">
                         <div class="section-title">
                             <h6> faq </h6>
@@ -220,35 +245,44 @@
                                  </div>
                         </div>
                     </div>
-                    <div class="contact-section">
-                        <div class="image-content">
-                            <img src="IMG/Landing Page/Group-285.webp" alt="">
-                        </div>
-                        <div class="message-text">
-                            <h4> jika kebingungan hubungi kami !</h4>
-                            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti neque saepe debitis reiciendis? At aspernatur assumenda asperiores tempora ipsa deserunt.  </p>
-                        </div>
-                        <div class="submit-message">
-                            <div class="input-submit">
-                                <input type="text" placeholder=" pesan " class="input-control">
-                            </div>
-                            <div class="input-submit-2">
-                                <div class="input-submit-lagi">
-                                    <input type="text" placeholder=" subject " class="input-control-2">
+                </div>  
+            </section>  
+            <!-- section 4 End FAQ -->
+            <!-- section 5 Start Contact -->
+                    <section class="section-5" id="section-5"> 
+                        <div class="container-contact">
+                            <div class="contact-section">
+                                <div class="image-content">
+                                    <img src="IMG/Landing Page/Group-285.webp" alt="">
                                 </div>
-                                <div class="input-submit-lagi-2">
-                                    <input type="text" placeholder=" email " class="input-control-2">
+                                <div class="message-text">
+                                    <h4> jika kebingungan hubungi kami !</h4>
+                                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti neque saepe debitis reiciendis? At aspernatur assumenda asperiores tempora ipsa deserunt.  </p>
                                 </div>
-                                
+                                <div class="submit-message">
+                                    <div class="input-submit">
+                                        <input type="text" placeholder=" pesan " class="input-control">
+                                    </div>
+                                    <div class="input-submit-2">
+                                        <div class="input-submit-lagi">
+                                            <input type="text" placeholder=" subject " class="input-control-2">
+                                        </div>
+                                        <div class="input-submit-lagi-2">
+                                            <input type="text" placeholder=" email " class="input-control-2">
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="button-submit">
+                                        <button class="button"> <h6>submit! </h6> </button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="button-submit">
-                                <button class="button"> <h6>submit! </h6> </button>
-                            </div>
+                        </div>      
                         </div>
-                    </div>
-                </div>
-                
-    </section>
+                        
+        </section>
+    <!-- section 5 end contact-->
+    <!--Footer Start  -->
     <div class="footer">
         <div class="footer-outer">
             <div class="footer-inner">
@@ -290,9 +324,11 @@
         </div>
     </div>
 
+<!-- Footer End -->
+    </div>    
+        
 
-    <!-- Section 2 End -->
 </body>
-
+<script src="JS/javaScript.js">  </script>
 
 </html>
