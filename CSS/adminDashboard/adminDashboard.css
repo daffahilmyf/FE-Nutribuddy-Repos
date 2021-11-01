@@ -325,7 +325,7 @@ body.active {
     position: absolute;
     right: 10%;
     stroke:#647387;
-    top: 35%;
+    top: 30%;
 }
 
 #card-need .col-sm-4:nth-child(1) input:focus{
