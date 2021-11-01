@@ -1,10 +1,10 @@
 $(document).ready(()=>{
 
     $.get("https://nutribuddy-staging.herokuapp.com/api/v1/users", (data)=>{
-        if(!data){
+        if(data){
             const userCollection = data['data']
             
-            $("#user-card").remove()
+            $("#user-card").empty()
 
             userCollection.forEach(element => {
                 $("#user-card").append(
