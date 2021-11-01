@@ -71,6 +71,10 @@ $(document).ready(()=>{
             });
         }
     })
+
+    $("card-data-box").click(()=>{
+        cardOption()
+    })
 })
 
 
