@@ -15,7 +15,7 @@ $(document).ready(()=>{
                                 <li><img src="img/dashboardHome/profile.png" width="60"></li>
                                 <li>
                                     <h5>${element.firstname +' '+ element.lastname}</h5>
-                                    <h6>${element.email}}</h6>
+                                    <h6>${element.email}</h6>
                                 </li>
                             </ul>
                         </div>
