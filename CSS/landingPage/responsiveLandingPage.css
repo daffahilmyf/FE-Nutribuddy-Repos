@@ -1,0 +1,293 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@media screen and (max-width : 1024px){
+
+    nav{
+        max-width: 100%;
+    }
+    .section-1{
+        max-width: 100%;
+    }
+    .section-1 .background{
+        position: absolute;
+        width: 100%;
+
+    }
+    .section-1 .home{
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        margin-top: 10%;
+    }
+    .section-1 .home .imageContent{
+        order: 0;
+        margin: 0;
+        margin-top: -15%;
+
+    }
+    .section-1 .home .imageContent img{
+        width: 380px;
+        height: 490px;
+    }
+    .section-1 .home .deskripsiContent{
+        margin: auto;
+        width: 70%;
+        text-align: center;
+        margin-top: -0px;
+    }
+    .section-1 .home .deskripsiContent h2{
+        font-size: 28px;
+    }
+    .section-1 .home .deskripsiContent .penjelasan{
+        font-size: 12px;
+        text-align: center;
+        text-justify: justify; 
+    }    
+    .section-1 .home .deskripsiContent h6{
+        font-size: 18px;
+        margin-top: 0;
+    }
+    .section-1 .home .deskripsiContent h6 span{
+        font-size: 16px;
+        text-transform: capitalize;
+    }
+    .section-1 .home .deskripsiContent .teamName{
+        font-size: 16px;
+    }
+    .section-1 .background{
+        width: 100%;
+    }
+
+    .section-1 .graphic-1,
+    .section-1 .graphic-2,
+    .section-1 .graphic-3,
+    .section-1 .graphic-4{
+        display: none;
+    }
+
+
+
+
+    .section-2{
+        max-width: 100%;
+        position: relative;
+    }
+    .section-2 .background-2{
+        width: 100%;
+        height: 100%;
+    }
+    .container-section-2{
+        max-width: 100%;
+    
+    }
+    .section-2 .about{
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    .about .section-title{
+        order: 0;
+        margin: 0;
+        width: 70%;
+        text-align: center;
+    }
+    .about-content .image-content{
+        order: 1;
+        top: 0;
+    }
+    .about-content .image-content img{
+        width: 350px;
+        height: 410px;
+    }
+
+    .section-title .graphic-title{
+        bottom: -20%;
+        right: 10%;
+        
+    }
+    .section-title .graphic-title img{
+        width: 800px;
+
+    }
+    .about .section-title .button-daftar{
+        bottom: -10%;
+        right: 45%;
+        position: absolute;
+        z-index: 100;
+    }
+    .about .section-title h6{
+        font-size: 18px;
+    }
+    .about .section-title h2{
+        font-size: 28px;
+    }
+    .about .section-title .penjelasan{
+        font-size: 12px;
+        text-align: center;
+        text-justify: justify; 
+        position: relative;
+        z-index: 100;
+    }
+    .section-3{
+        width: 100%;
+    }
+    .section-3 .background-3{
+        height: 100%;
+    }
+    .container-features{
+        width: 80%;
+    }
+    .features h4{
+        font-size: 24px;
+    }
+    .features-content{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .features-content .content-inner{
+        width: 45%;
+        margin: 0;
+
+    }
+    .features-content .content-inner:nth-child(3){
+        margin: 20px auto 0;
+    }
+    .section-3 .grapich-section-3{
+        display: none;
+    }
+    .section-4{
+        /* width: 100%; */
+        min-height: 100vh;
+    }
+    
+    .container-faq{
+        width: 100%;
+   
+    }    
+    .section-5{
+        max-width: 100%;
+    }
+    .section-5 .contact-section{
+        width: 90%;
+        height: 200px;
+    }
+    .container-contact{
+        max-width: 100%;
+    }
+    .contact-section .image-content {
+        width: 15%;
+        height: 20px;
+        position: relative;
+        top: 20px;
+    }
+    .contact-section .image-content img{
+        width: 250px;
+        position: absolute;
+        top: -130px;
+        left: -20%;
+    }
+    .contact-section .message-text{
+        width: 40%;
+
+    }
+    .contact-section .message-text h4{
+        font-size: 18px;    
+    }
+    .contact-section .message-text p{
+        font-size: 12px;
+        width: 100%;
+    }
+    .contact-section .contact-message .text-box{
+        height: 35px;
+        font-size: 12px;
+    }
+    .contact-section .contact-message .text-box::placeholder{
+        font-size: 12px;
+    }
+    .contact-section .contact-message .text-area{
+        height: 40%;
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+    .contact-section .contact-message .text-area::placeholder{
+        font-size: 12px;
+    }
+
+    .contact-section .contact-message .send-btn{
+        height: 25px;
+        font-size: 10px;
+    }
+    .footer-outer{
+        width: 100%;
+        padding: 0;
+    }
+    .footer-outer .footer-inner{
+        margin: 20px auto;
+        width: 100%;
+    }
+
+    .footer-inner .jelajah{
+        width: 120px;
+        height: 160px;
+    }
+    .footer-inner h5{
+        font-size: 18px;
+    }
+    .footer-inner p{
+        font-size: 12px;
+    }
+    .footer-inner .hubungi{
+        width: 390px;
+        height: 160px;
+    }
+    .footer-inner .hubungi p{
+        width: 90%;
+        text-align: left;
+    }
+    .footer-inner .social-media{
+        margin: 0;
+        height: 160px;
+    }
+@media screen and (max-width : 768px){
+
+    nav{
+        max-width: 100%;
+        justify-content: space-between;
+    }
+    .section-1{
+        max-width: 100%;
+    }
+    .section-1 .content {
+        max-width: 100%;
+    }
+    .section-1 .content .deskripsiContent{
+        padding: 10px;
+        margin: 10px;
+    }
+    .section-1 .content .imageContent img{
+        width: 10px;
+    }
+}
+
+@media screen and (max-width : 576px){
+    nav {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 0;
+    }
+    nav .menu ul{
+        display: none;
+    }
+    nav .pilihanButton ul{
+        display: none;
+    }
+}
+
+}
