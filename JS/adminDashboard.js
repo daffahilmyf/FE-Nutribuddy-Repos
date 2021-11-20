@@ -1,11 +1,8 @@
 $(document).ready(()=>{
-
     $.get("https://nutribuddy-staging.herokuapp.com/api/v1/users", (data)=>{
         if(data){
             const userCollection = data['data']
-            
             $("#user-card").empty()
-
             userCollection.forEach(element => {
                 $("#user-card").append(
                 `<div class="col-sm-4">
@@ -82,3 +79,198 @@ function cardOption(){
     collapseComponent = document.getElementById("option-card");
     collapseComponent.classList.toggle('active');
 }
+
+
+// function getPageList(totalPages, page, maxLength){
+//     function range(start, end){
+//       return Array.from(Array(end - start + 1), (_, i) => i + start);
+//     }
+  
+//     var sideWidth = maxLength < 9 ? 1 : 2;
+//     var leftWidth = (maxLength - sideWidth * 2 - 3) >> 1;
+//     var rightWidth = (maxLength - sideWidth * 2 - 3) >> 1;
+  
+//     if(totalPages <= maxLength){
+//       return range(1, totalPages);
+//     }
+  
+//     if(page <= maxLength - sideWidth - 1 - rightWidth){
+//       return range(1, maxLength - sideWidth - 1).concat(0, range(totalPages - sideWidth + 1, totalPages));
+//     }
+  
+//     if(page >= totalPages - sideWidth - 1 - rightWidth){
+//       return range(1, sideWidth).concat(0, range(totalPages- sideWidth - 1 - rightWidth - leftWidth, totalPages));
+//     }
+  
+//     return range(1, sideWidth).concat(0, range(page - leftWidth, page + rightWidth), 0, range(totalPages - sideWidth + 1, totalPages));
+//   }
+  
+//   $(function(){
+//     var numberOfItems = $("#user-card .col-sm-4").length;
+//     var limitPerPage = 3; //How many card items visible per a page
+//     var totalPages = Math.ceil(numberOfItems / limitPerPage);
+//     var paginationSize = 7; //How many page elements visible in the pagination
+//     var currentPage;
+  
+//     function showPage(whichPage){
+//       if(whichPage < 1 || whichPage > totalPages) return false;
+  
+//       currentPage = whichPage;
+  
+//       $("#user-card .col-sm-4").hide().slice(3,6).show();
+  
+//       $("#pagination li").slice(1, -1).remove();
+  
+//       $(".prev-button").toggleClass("disable", currentPage === 1);
+//       $(".next-button").toggleClass("disable", currentPage === totalPages);
+//       return true;
+//     }
+  
+//     $(".pagination").append(
+//       $("<li>").addClass("page-item").addClass("previous-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text("Prev")),
+//       $("<li>").addClass("page-item").addClass("next-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text("Next"))
+//     );
+  
+//     $(".card-content").show();
+//     showPage(1);
+  
+//     $(document).on("click", ".pagination li.current-page:not(.active)", function(){
+//       return showPage(+$(this).text());
+//     });
+  
+//     $(".next-page").on("click", function(){
+//       return showPage(currentPage + 1);
+//     });
+  
+//     $(".previous-page").on("click", function(){
+//       return showPage(currentPage - 1);
+//     });
+//   });
+
+const ulTag = document.getElementById("pagination").querySelector("ul");
+const numberOfItems = document.getElementById("user-card").getElementsByClassName("col-sm-4").length;
+const numberPerPage = 3;
+let totalPages = Math.ceil(numberOfItems/numberPerPage);
+let page = 1;
+ulTag.innerHTML = createPagination(totalPages, page);
+var akhir,tampung;
+
+
+function createPagination(totalPages, page){
+    let liTag = '';
+    let active;
+    let beforePage = page - 1;
+    let afterPage = page + 1;
+
+
+    if(page > 1){ 
+      liTag += `<li class="prev-button" onclick="createPagination(totalPages, ${page - 1})"><span><i class="fas fa-angle-left"></i></span></li>`;
+    }
+  
+    if(page > 2){ 
+      liTag += `<li class="first numb" onclick="createPagination(totalPages, 1)">1</li>`;
+      if(page > 3){ 
+        liTag += `<li class="dot">..</li>`;
+      }
+    }
+  
+    for (var plength = beforePage; plength <= afterPage; plength++) {
+      if (plength > totalPages) { 
+        continue;
+      }
+      if (plength == 0) { 
+        plength = plength + 1;
+      }
+      if(page == plength){
+        active = "active";
+      }else{ 
+        active = "";
+      }
+      liTag += `<li class="numb ${active}" onclick="createPagination(totalPages, ${plength})"><span>${plength}</span></li>`;
+    }
+  
+    if(page < totalPages - 1){ 
+      if(page < totalPages - 2){ 
+        liTag += `<li class="dot">..</li>`;
+      }
+      liTag += `<li class="last numb" onclick="createPagination(totalPages, ${totalPages})"><span>${totalPages}</span></li>`;
+    }
+  
+    if (page < totalPages) {
+      liTag += `<li class="next-button" onclick="createPagination(totalPages, ${page + 1})"><span> <i class="fas fa-angle-right"></i></span></li>`;
+    }
+    $("#user-card .col-sm-4").hide().slice((page - 1) * numberPerPage, page * numberPerPage).show();
+    ulTag.innerHTML = liTag; 
+    return liTag;
+}
+
+// $(function(){
+//     var numberOfItems = $("#user-card .col-sm-4").length;
+//     var limitPerPage = 3; //How many card items visible per a page
+//     var totalPages = Math.ceil(numberOfItems / limitPerPage);
+//     var paginationSize = 7; //How many page elements visible in the pagination
+//     var currentPage;
+  
+//     function showPage(whichPage){
+//       if(whichPage < 1 || whichPage > totalPages) return false;
+  
+//       currentPage = whichPage;
+  
+//       $("#user-card .col-sm-4").hide().slice((currentPage - 1) * limitPerPage, currentPage * limitPerPage).show();
+  
+//       $(".pagination li").slice(1, -1).remove();
+  
+//       getPageList(totalPages, currentPage, paginationSize).forEach(item => {
+//         $("<li>").addClass("page-item").addClass(item ? "current-page" : "dots")
+//         .toggleClass("active", item === currentPage).append($("<a>").addClass("page-link")
+//         .attr({href: "javascript:void(0)"}).text(item || "...")).insertBefore(".next-page");
+//       });
+  
+//       $(".previous-page").toggleClass("disable", currentPage === 1);
+//       $(".next-page").toggleClass("disable", currentPage === totalPages);
+//       return true;
+//     }
+  
+//     $(".pagination").append(
+//       $("<li>").addClass("page-item").addClass("previous-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text("Prev")),
+//       $("<li>").addClass("page-item").addClass("next-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text("Next"))
+//     );
+  
+//     $(".card-content").show();
+//     showPage(1);
+  
+//     $(document).on("click", ".pagination li.current-page:not(.active)", function(){
+//       return showPage(+$(this).text());
+//     });
+  
+//     $(".next-page").on("click", function(){
+//       return showPage(currentPage + 1);
+//     });
+  
+//     $(".previous-page").on("click", function(){
+//       return showPage(currentPage - 1);
+//     });
+//   });
+
+
+/**const listLenght = document.getElementById("user-card").getElementsByClassName("col-sm-4").length;
+const numberOfItems = listLenght;
+const numberPerPage = 3;
+const currentPage = 1;
+const numberOfPages = Math.ceil(numberOfItems/numberPerPage);
+
+const trimStart = (currentPage-1)*numberPerPage
+const trimEnd = trimStart + numberPerPage
+
+function buildPage(currPage) {
+    const trimStart = (currPage-1)*numberPerPage
+    const trimEnd = trimStart + numberPerPage
+}
+
+for (let i=0; i<numberOfPages; i++) {
+    $('#pagination').append(`<li "value="${i+1}">${i+1}</li>`)
+}
+
+function pagination(){
+    
+}**/
