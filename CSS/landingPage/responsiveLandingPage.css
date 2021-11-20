@@ -2,13 +2,33 @@
     padding: 0;
     margin: 0;
 }
+body{
+    overflow-x: hidden;
+
+}
 @media screen and (max-width : 1024px){
 
     nav{
         max-width: 100%;
     }
+    nav .menu-togle{
+        display: none;
+    }
+
+    .nav-inner .logo{
+        margin-left: -3%;
+    }
+    nav .pilihanButton ul li{
+        margin: 0;
+        width: 80px;
+        height: 40px;
+    }
+    nav .pilihanButton ul li:nth-child(3){
+        margin-left: 10px;
+    }
     .section-1{
         max-width: 100%;
+        min-height: 60vh;
     }
     .section-1 .background{
         position: absolute;
@@ -19,7 +39,7 @@
         flex-direction: column;
         align-content: center;
         align-items: center;
-        margin-top: 10%;
+        margin-top: 20%;
     }
     .section-1 .home .imageContent{
         order: 0;
@@ -58,13 +78,6 @@
     }
     .section-1 .background{
         width: 100%;
-    }
-
-    .section-1 .graphic-1,
-    .section-1 .graphic-2,
-    .section-1 .graphic-3,
-    .section-1 .graphic-4{
-        display: none;
     }
 
 
@@ -134,6 +147,7 @@
     }
     .section-3{
         width: 100%;
+        min-height: 60vh;
     }
     .section-3 .background-3{
         height: 100%;
@@ -162,7 +176,7 @@
     }
     .section-4{
         /* width: 100%; */
-        min-height: 100vh;
+        min-height: 60vh;
     }
     
     .container-faq{
@@ -254,23 +268,300 @@
         height: 160px;
     }
 @media screen and (max-width : 768px){
-
-    nav{
+    .section-1 .container-section-1,
+    .section-2 .container-section-2,
+    .section-3 .container-features,
+    .section-4 .container-faq{
+        max-width: 80%;
+    }
+    nav .nav-inner{
         max-width: 100%;
+        display: flex;
         justify-content: space-between;
+        padding: 0 50px 0 50px;
+        
+    }
+
+    nav .logo{
+        margin: 0;
+        order: 0;
+        
+
+    }
+    nav  .nav-inner .menu ul .back-nav{
+        display: inline;
+        z-index: -1;
+        object-fit: cover;
+        max-width: 100%;
+        height: 100%;
+    }
+    nav  .nav-inner .menu ul{
+        position: absolute;
+        left: 0;
+        top: 0;
+        flex-direction: column;
+        background-color: #108CFF;
+        height: 66vh;
+        z-index: -1;
+        align-items: center;
+        align-content: center;
+        justify-content: space-evenly;
+        width: 80%;
+        order: 2;
+        margin: 0;
+        transition: all 2s;
+        transform: translatex(-100%);
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    nav  .nav-inner .menu ul li{
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        text-transform: capitalize;
+        text-decoration: none;
+        background-color: #5e16bd;
+        background-image: linear-gradient(90deg, #6db9ff, #6db9ff);
+        padding: 1rem 2.5rem;
+        height: 6rem;
+        width: 60%;
+        border-radius: 20px 50px;
+        border: none;
+        overflow: hidden;
+        transition: all 0.9s ease-in-out;
+    }
+    nav  .nav-inner .menu ul li:nth-child(2){
+        margin-top: 10%;
+    }
+    nav  .nav-inner .menu ul li::before {
+        background: #fff;
+        content: "";
+        height: 155px;
+        opacity: 0;
+        position: absolute;
+        top: -50px;
+        transform: rotate(35deg);
+        width: 50px;
+        transition: all 3000ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    nav  .nav-inner .menu ul li::after {
+        background: #fff;
+        content: "";
+        height: 20rem;
+        opacity: 0;
+        position: absolute;
+        top: -50px;
+        transform: rotate(35deg);
+        transition: all 3000ms cubic-bezier(0.19, 1, 0.22, 1);
+        width: 8rem;
+    }
+    nav  .nav-inner .menu ul li::before {
+        left: -50%;
+    }
+
+    nav  .nav-inner .menu ul li::after {
+        left: -100%;
+    }
+
+    nav  .nav-inner .menu ul li:hover,
+    nav  .nav-inner .menu ul li:active {
+        transform: translateY(-3px);
+        color: #fff;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    nav  .nav-inner .menu ul li:hover::before {
+        left: 120%;
+        opacity: 0.9s;
+    }
+
+    nav  .nav-inner .menu ul li:hover::after {
+        left: 200%;
+        opacity: 0.6;
+    }
+
+    
+    nav  .nav-inner .menu ul.slide{
+        transform: translatex(0);
+        opacity: 1;
+    }
+    nav .pilihanButton {
+        display: none;
+    }
+    .menu-toggle{
+        display: flex;
     }
     .section-1{
-        max-width: 100%;
+        width: 100%;
+        overflow-x: hidden;
     }
-    .section-1 .content {
-        max-width: 100%;
+
+    .section-1 .background {
+        width: 100%;
+        object-fit: cover;
     }
-    .section-1 .content .deskripsiContent{
-        padding: 10px;
-        margin: 10px;
+    .section-1 .home .imageContent{
+        margin-top: -10%;
+    }
+    .section-1 .home .imageContent img{
+        width: 270px;
+        height: 350px;
+    }
+    .section-1 .home .deskripsiContent{
+        width: 100%;
+    }
+    .section-1 .home .deskripsiContent h2{
+        font-size: 24px;
+    }
+    .section-1 .home .deskripsiContent h6,
+    .section-1 .home .deskripsiContent h6 span{
+        font-size: 14px;
+    }
+    .section-1 .home .deskripsiContent .penjelasan{
+        width: 100%;
     }
     .section-1 .content .imageContent img{
         width: 10px;
+    }
+    .section-1 .home .deskripsiContent .teamName{
+        font-size: 13px;
+    }
+    .section-1 .home .deskripsiContent .buttonDownload ul{
+        display: flex;
+        justify-content: center;
+    }    
+    .section-2 {
+        max-width: 100%;
+        min-height: 60vh;
+    }
+    .section-2 .container-section-2{
+        height: 100%;
+    }
+    .section-2 .background-2{
+        object-fit: cover;
+    }
+    .section-2 .about{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .about-content .image-content img{
+        width: 250px;
+        height: 260px;
+    }
+    .about .section-title{
+        width: 100%;
+    }
+    .about .section-title h6{
+        font: 12px;
+    }
+    .about .section-title h2{
+        font-size: 24px;
+    }
+    .about .section-title .penjelasan{
+        max-width: 100%;
+        margin: 0;
+    }
+    .section-title .graphic-title {
+        width: 100%;
+        left: -5%;
+    }
+    .section-title .graphic-title img{
+        width: 650px;
+    }
+    .button-daftar{
+        margin: 0 auto 0 auto;
+    }
+
+    .section-3 {
+        max-width: 100%;
+        
+    }
+    .section-3 .background-3{
+        object-fit: cover;
+    }
+    .features-content .content-inner img{
+        width: 80px;
+    }
+    .features-content .content-inner h5{
+        font-size: 18px;
+    }
+    .features-content .content-inner p{
+        font-size: 12px;
+    }
+    .section-4 {
+        width: 100%;
+        margin-top: 10%;
+    }
+    .faq .titel .col-sm-12 h2{
+        font-size: 24px;
+    }
+    .faq .titel .col-sm-12 h6{
+        font-size: 18px;
+    }
+    .faq .isi .col-sm-6 .nyala .titelFaq h5,
+    .faq .isi .col-sm-6 .mati .titelFaq h5{
+        font-size: 14px;
+        
+    }
+    .faq .isi .col-sm-6 .nyala p,
+    .faq .isi .col-sm-6 .mati p{
+        font-size: 12px;
+    }
+
+    
+    .section-5{
+        width: 100%;
+    }
+    .container-contact{
+        width: 100%;
+    }
+    .contact-section .image-content img{
+        width: 200px;
+        top: -290%;
+        left: -50%;
+        position: absolute;
+    }
+    .contact-section .message-text p{
+        font-size: 11px;
+        margin: -10px 0 0 0;
+        line-height: 25px;
+    }
+    .contact-section .contact-message{
+        margin-top: 15px;
+    }
+    .contact-section .contact-message .text-box{
+        height: 20px;
+        width: 100%;
+    }
+    .contact-section .contact-message .text-box:nth-child(1){
+        margin: 0;
+    }
+    .contact-section .contact-message .text-area{
+        height: 37%;
+        margin-bottom: 8px;
+    }
+    .contact-section .contact-message .send-btn{
+        width: 30%;
+    }
+    .footer{
+        min-height: 40vh;
+    }
+    .footer-inner .jelajah h5{
+        width: 100%;
+    }
+    .footer .footer-inner{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-inner .hubungi{
+        width: 73%;
+        margin-right: -10px;
+    }
+    .footer-inner .social-media{
+        width: 20%;
+        margin: 0;
     }
 }
 
@@ -287,6 +578,9 @@
     }
     nav .pilihanButton ul{
         display: none;
+    }
+    .menu-togle{
+        display: flex;
     }
 }
 
