@@ -45,7 +45,7 @@ body.active {
     height: 100vh;
 }
 
-#Navbar #content ul li:nth-child(1){ 
+#Navbar #content ul .active{ 
     width: 100%;
     height: 50px;
     display: flex;
@@ -88,7 +88,7 @@ body.active {
     transition: 500ms ease;
 }
 
-#Navbar #content ul li:nth-child(1) h5{
+#Navbar #content ul .active h5{
     font-weight: 600;
     color: #3894FF;
     font-size: 15px;
