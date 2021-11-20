@@ -163,9 +163,7 @@ function createPagination(totalPages, page){
     let afterPage = page + 1;
 
 
-    if(page > 1){ 
-      liTag += `<li class="prev-button" onclick="createPagination(totalPages, ${page - 1})"><span><i class="fas fa-angle-left"></i></span></li>`;
-    }
+    liTag += `<li class="prev-button" onclick="createPagination(totalPages, ${page - 1})"><span><i class="fas fa-angle-left"></i></span></li>`;
   
     if(page > 2){ 
       liTag += `<li class="first numb" onclick="createPagination(totalPages, 1)">1</li>`;
@@ -196,9 +194,7 @@ function createPagination(totalPages, page){
       liTag += `<li class="last numb" onclick="createPagination(totalPages, ${totalPages})"><span>${totalPages}</span></li>`;
     }
   
-    if (page < totalPages) {
       liTag += `<li class="next-button" onclick="createPagination(totalPages, ${page + 1})"><span> <i class="fas fa-angle-right"></i></span></li>`;
-    }
     $("#user-card .col-sm-4").hide().slice((page - 1) * numberPerPage, page * numberPerPage).show();
     ulTag.innerHTML = liTag; 
     return liTag;

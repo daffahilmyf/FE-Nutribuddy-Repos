@@ -1,0 +1,15 @@
+#main-home {
+    padding-left: 2.5em;
+    height: 100vh;
+
+    padding-right: 2.5em;
+}
+
+#main-home table{
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+#main-home .table .table-primary{
+    background-color: #108CFF;
+}
